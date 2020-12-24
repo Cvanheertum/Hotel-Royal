@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Primary">#344955</color>
+    <color name="PrimaryDark">#232F34</color>
+    <color name="PrimaryLight">#4A6572</color>
+    <color name="Secondary">#F9AA33</color>
+
+    <color name="primary_text_color">#363A43</color>
+    <color name="secondary_text_color">#7A8089</color>
+
+    <color name="snackbar_error_color">#F72400</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
