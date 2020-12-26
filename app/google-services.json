@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "515311371738",
+    "project_id": "hotel-royal-f2267",
+    "storage_bucket": "hotel-royal-f2267.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515311371738:android:49dcde8e23d54f5d7bace3",
+        "android_client_info": {
+          "package_name": "nl.connorvh.hotelroyal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515311371738-fmmj24itjkaqcn3gk6g0dgph8qr4iis2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZaFOji1SMd9ZyfUn4xnhf6HNEbMYDjEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515311371738-fmmj24itjkaqcn3gk6g0dgph8qr4iis2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

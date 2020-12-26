@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Header Styles -->
+    <style name="h1_headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/h1_headline_size</item>
+        <item name="fontFamily">@font/work_sans_light</item>
+    </style>
+
+    <style name="h2_headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/h2_headline_size</item>
+        <item name="fontFamily">@font/work_sans_semibold</item>
+    </style>
+
+    <style name="h3_headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/h3_headline_size</item>
+        <item name="fontFamily">@font/work_sans</item>
+    </style>
+
+    <style name="h4_headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/h4_headline_size</item>
+        <item name="fontFamily">@font/work_sans_semibold</item>
+    </style>
+
+    <style name="h5_headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/h5_headline_size</item>
+        <item name="fontFamily">@font/work_sans_bold</item>
+    </style>
+
+    <style name="h6_headline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/h6_headline_size</item>
+        <item name="fontFamily">@font/work_sans_medium</item>
+    </style>
+
+    <!-- Subtitle & Body Styles -->
+    <style name="subtitle_1" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/subtitle_1_size</item>
+        <item name="fontFamily">@font/work_sans</item>
+    </style>
+
+    <style name="subtitle_2" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/subtitle_2_size</item>
+        <item name="fontFamily">@font/work_sans_medium</item>
+    </style>
+
+    <style name="body_1" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/body_1_size</item>
+        <item name="fontFamily">@font/work_sans</item>
+    </style>
+
+    <style name="body_2" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/body_2_size</item>
+        <item name="fontFamily">@font/work_sans</item>
+    </style>
+
+    <!-- Button, Caption & Overline -->
+    <style name="button" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="fontFamily">@font/work_sans_medium</item>
+        <item name="cornerRadius">@dimen/btn_corner_radius_medium</item>
+        <item name="android:paddingEnd">@dimen/btn_padding_StartEnd</item>
+        <item name="android:paddingStart">@dimen/btn_padding_StartEnd</item>
+        <item name="android:paddingTop">@dimen/btn_padding_TopBottom</item>
+        <item name="android:paddingBottom">@dimen/btn_padding_TopBottom</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="caption" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/caption_text_size</item>
+        <item name="fontFamily">@font/work_sans</item>
+    </style>
+
+    <style name="overline" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/overline_text_size</item>
+        <item name="fontFamily">@font/work_sans_bold</item>
+        <item name="textAllCaps">true</item>
+    </style>
+</resources>

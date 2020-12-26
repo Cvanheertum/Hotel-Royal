@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/app_side_padding"
+    android:paddingEnd="@dimen/app_side_padding"
+    tools:context=".activities.IntroActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/intro_screen_title_text_marginTop"
+        style="@style/h3_headline"
+        android:text="@string/app_name"
+        android:textColor="@color/primary_text_color"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_marginTop="@dimen/intro_screen_image_marginTop"
+        android:contentDescription="@string/image_contentDescription"
+        android:src="@drawable/intro_screen_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/lets_get_started_text_marginTop"
+        style="@style/h5_headline"
+        android:text="@string/let_s_get_started_text"
+        android:textColor="@color/primary_text_color"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/intro_text_marginTop"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/intro_text_line_spacing_extra"
+        style="@style/body_1"
+        android:text="@string/intro_text_description"
+        android:textColor="@color/secondary_text_color"/>
+
+    <Button
+        android:id="@+id/btn_sign_up_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/intro_screen_sign_in_btn_marginTop"
+        android:gravity="center"
+        style="@style/button"
+        android:paddingTop="@dimen/btn_padding_TopBottom"
+        android:paddingBottom="@dimen/btn_padding_TopBottom"
+        android:text="@string/sign_up"
+        android:backgroundTint="@color/Primary"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_sign_in_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textSize="@dimen/caption_text_size"
+        android:textColor="@color/primary_text_color"
+        android:fontFamily="@font/work_sans"
+        android:text="@string/sign_in" />
+
+</LinearLayout>

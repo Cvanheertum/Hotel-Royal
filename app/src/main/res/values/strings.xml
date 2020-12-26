@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">Hotel Royal</string>
+    <string name="image_contentDescription">image</string>
+
+    <string name="let_s_get_started_text">Let\'s Get Started</string>
+    <string name="intro_text_description">Search and find the best hotels in your area. Based on the amount of followers.</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="password_helper_text">Password must contain lowercase, uppercase, digit and special character.</string>
+    <string name="sign_up_description_text">Enter your name, email and password to register with us.</string>
+    <string name="sign_in_description_text">Enter your email and password to sign in.</string>
+
+    <string name="please_click_back_again_to_exit">Please click back again to exit.</string>
+    <string name="please_wait">Please Wait&#8230;</string>
+    <string name="sign_out">Sign Out</string>
+
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="account">Account</string>
+    <string name="update">Update</string>
+    <string name="mobile">Mobile</string>
 </resources>
