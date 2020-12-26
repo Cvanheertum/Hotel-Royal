@@ -1,14 +1,12 @@
 package nl.connorvh.hotelroyal.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.core.view.GravityCompat
 import com.bumptech.glide.Glide
 import com.google.android.material.navigation.NavigationView
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.app_bar_main.*
-import kotlinx.android.synthetic.main.nav_header_main.*
 import kotlinx.android.synthetic.main.nav_header_main.view.*
 import nl.connorvh.hotelroyal.R
 import nl.connorvh.hotelroyal.databinding.ActivityMainBinding
@@ -26,7 +24,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
 
         setupActionBar()
         binding.navView.setNavigationItemSelectedListener(this)
-        FirestoreClass().signInUser(this)
+        FirestoreClass().loadUserData(this)
 
         binding.appBarMain.mainContent.btnSignOut.setOnClickListener {
             signOut()
@@ -68,7 +66,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
                 Toast.makeText(this@MainActivity, "Search", Toast.LENGTH_LONG).show()
             }
             R.id.nav_drawer_account -> {
-                Toast.makeText(this@MainActivity, "Account", Toast.LENGTH_LONG).show()
+                startActivity(Intent(this, AccountActivity::class.java))
             }
         }
 
@@ -81,7 +79,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
             .load(user.image)
             .centerCrop()
             .placeholder(R.drawable.ic_user_place_holder)
-            .into(binding.navView.nav_user_image);
+            .into(binding.navView.nav_user_image)
 
         binding.navView.tv_username.text = user.name
     }

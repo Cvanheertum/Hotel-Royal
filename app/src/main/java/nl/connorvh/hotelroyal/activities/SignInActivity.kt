@@ -63,7 +63,7 @@ class SignInActivity : BaseActivity() {
                         // Sign in success, update UI with the signed-in user's information
                         Log.d("Succes", "signInWithEmail:success")
 
-                        FirestoreClass().signInUser(this)
+                        FirestoreClass().loadUserData(this)
 
                         Toast.makeText(
                             this,

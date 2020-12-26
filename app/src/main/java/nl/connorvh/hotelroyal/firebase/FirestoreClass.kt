@@ -7,6 +7,7 @@ import com.google.firebase.firestore.SetOptions
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
+import nl.connorvh.hotelroyal.activities.AccountActivity
 import nl.connorvh.hotelroyal.activities.MainActivity
 import nl.connorvh.hotelroyal.activities.SignInActivity
 import nl.connorvh.hotelroyal.activities.SignUpActivity
@@ -31,7 +32,7 @@ class FirestoreClass {
             }
     }
 
-    fun signInUser(activity: Activity) {
+    fun loadUserData(activity: Activity) {
 
         db.collection(Constants.USERS)
             .document(getCurrentUserId())
@@ -46,6 +47,9 @@ class FirestoreClass {
                         }
                         is MainActivity -> {
                             activity.updateNavigationUserDetails(loggedInUser)
+                        }
+                        is AccountActivity -> {
+                            activity.setUserDataInUI(loggedInUser)
                         }
                     }
                 }
