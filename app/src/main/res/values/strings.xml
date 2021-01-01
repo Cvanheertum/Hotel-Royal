@@ -22,4 +22,11 @@
     <string name="account">Account</string>
     <string name="update">Update</string>
     <string name="mobile">Mobile</string>
+    <string name="website">Website</string>
+    <string name="description">Description</string>
+    <string name="create">Create</string>
+    <string name="hotel_activity_title">Create Hotel</string>
+    <string name="no_hotels_available">Search for cool hotels!!</string>
+    <string name="followers">Followers</string>
+    <string name="follow">Follow</string>
 </resources>

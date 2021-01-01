@@ -4,19 +4,19 @@
     <group android:checkableBehavior="single">
 
         <item
-            android:id="@+id/nav_drawer_home"
-            android:icon="@drawable/ic_home_black"
-            android:title="@string/home" />
-
-        <item
             android:id="@+id/nav_drawer_search"
             android:icon="@drawable/ic_search_black"
-            android:title="@string/search"/>
+            android:title="@string/search" />
 
         <item
             android:id="@+id/nav_drawer_account"
             android:icon="@drawable/ic_account_black"
-            android:title="@string/account"/>
+            android:title="@string/account" />
+
+        <item
+            android:id="@+id/nav_drawer_sign_out"
+            android:icon="@drawable/ic_power_black"
+            android:title="@string/sign_out" />
     </group>
 
 </menu>

@@ -4,6 +4,7 @@ import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -33,6 +34,7 @@ open class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         auth = Firebase.auth
+
     }
 
     fun showProgressDialog(text: String) {

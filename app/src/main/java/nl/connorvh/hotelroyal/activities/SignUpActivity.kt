@@ -1,5 +1,6 @@
 package nl.connorvh.hotelroyal.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
@@ -87,8 +88,6 @@ class SignUpActivity : BaseActivity() {
 
                         FirestoreClass().registerUser(this, user)
 
-                        // TODO - Navigate to the home page of the app.
-
                     } else {
 
                         // If sign in fails, display a message to the user.
@@ -142,7 +141,7 @@ class SignUpActivity : BaseActivity() {
 
         hideProgressDialog()
 
-        FirebaseAuth.getInstance().signOut()
+        startActivity(Intent(this@SignUpActivity, MainActivity::class.java))
         // Finish the Sign-Up Screen
         finish()
     }

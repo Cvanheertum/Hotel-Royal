@@ -2,6 +2,7 @@
 <resources>
     <!-- General App Styles -->
     <dimen name="app_side_padding">32dp</dimen>
+    <dimen name="app_top_padding">16dp</dimen>
     <dimen name="btn_corner_radius_medium">0dp</dimen>
     <dimen name="btn_padding_TopBottom">16dp</dimen>
     <dimen name="btn_padding_StartEnd">32dp</dimen>
@@ -71,4 +72,18 @@
     <dimen name="account_et_email_marginTop">20dp</dimen>
     <dimen name="account_et_mobile_marginTop">20dp</dimen>
     <dimen name="account_btn_update_marginTop">30dp</dimen>
+
+    <!-- Content Main -->
+    <dimen name="item_hotel_content_marginBottom">10dp</dimen>
+    <dimen name="item_hotel_content_padding">10dp</dimen>
+    <dimen name="item_hotel_image_size">60dp</dimen>
+    <dimen name="item_hotel_image_circular_border_width">0.5dp</dimen>
+    <dimen name="item_hotel_name_layout_marginStart">10dp</dimen>
+    <dimen name="item_hotel_divider_marginTop">5dp</dimen>
+    <dimen name="item_hotel_divider_height">0.3dp</dimen>
+    <dimen name="task_list_content_padding">10dp</dimen>
+
+    <!-- Hotel Details -->
+    <dimen name="hotel_image_size">120dp</dimen>
+
 </resources>

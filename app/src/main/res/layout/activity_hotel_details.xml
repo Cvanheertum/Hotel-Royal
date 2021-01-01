@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HotelDetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_hotel_details_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/Primary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/app_side_padding"
+        android:paddingEnd="@dimen/app_side_padding"
+        android:layout_marginTop="@dimen/app_top_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_hotel_details_image"
+            android:layout_width="@dimen/hotel_image_size"
+            android:layout_height="@dimen/hotel_image_size"
+            android:contentDescription="@string/image_contentDescription"
+            android:src="@drawable/ic_user_place_holder"
+            app:civ_border_color="@color/primary_text_color"
+            app:civ_border_width="@dimen/item_hotel_image_circular_border_width" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginStart="40dp">
+
+            <TextView
+                android:id="@+id/tv_followers_count"
+                style="@style/h6_headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="300" />
+
+            <TextView
+                style="@style/body_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/followers" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_hotel_follow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/image_contentDescription"
+            android:src="@drawable/ic_favorite_outlined"
+            android:layout_marginStart="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/ll_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:paddingStart="@dimen/app_side_padding"
+        android:paddingEnd="@dimen/app_side_padding">
+
+        <TextView
+            android:id="@+id/tv_hotel_name"
+            style="@style/body_1"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Hotel Name" />
+
+        <TextView
+            android:id="@+id/tv_hotel_desc"
+            style="@style/body_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Hotel Name" />
+
+        <TextView
+            android:id="@+id/tv_hotel_website"
+            style="@style/body_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="www.example.nl"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_hotel_email"
+            style="@style/body_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="info@example.nl"/>
+
+        <TextView
+            android:id="@+id/tv_hotel_mobile"
+            style="@style/body_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="+31 297267514"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
